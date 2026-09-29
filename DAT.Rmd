@@ -1,0 +1,66 @@
+---
+title: "DAT"
+subtitle: "DASC 360: Multivariate Data Analysis"
+author: "Tyler Johnson"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: flatly
+    toc: true
+    number_sections: false
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+mainfont: TimesNewRoman
+sansfont: TimesNewRoman
+monofont: TimesNewRoman
+---
+
+#### Load Relevant R Libraries
+```{r warning=FALSE, message=FALSE}
+library(rmarkdown); library(knitr); library(moments); 
+library(scatterplot3d); library(corrplot); library(pso)
+library(psych); library(GPArotation); library(lavaan)
+```
+
+
+### Choose One Issue or Question
+Identifying regions at risk for climate related public health crises.
+
+
+### Global or Local outside US
+Global
+
+
+### Use Strategies for Finding Data
+
+## 1) Assess your data needs
+# Topic: For IVs, temperature change, precipitation change, increase in extreme weather events, increase in droughts, existing number of rivers, biome type, population density, local food production, local wealth. DVs: changes in all cause mortality, changes in natural disaster damages
+
+# Time Period: Ideally time series.
+
+# Granularity: Summary data is fine
+
+# Geography: Subnational ideal, county level may be best
+
+# Frequency: Yearly is likely fine, but seasonal could allow for seasonal effects
+
+# Method: Any
+
+
+## 2) Ask who cares
+Governments care both about predicting catastrophes within their borders, and looking good or seeking aid.
+
+Many international NGOs are purpose built to track and address these kinds of things.
+
+Researchers may be interested academically, especially climate scientists.
+
+Trade/industry may also track it, especially reinsurance firms (actuaries, cat modeling)
+
+
+## 3) Search through different paths
+
+# 3. Library Guide https://libguides.stthomas.edu/c.php?g=88624&p=572486
+UN Sustainable Development Goal Indicators https://unstats.un.org/sdgs/dataportal - very promising at tracking national preparedness and vulnerability
+
+data.un.org - very sleek interface (LLM?) for fetching official UN data, extremely promising

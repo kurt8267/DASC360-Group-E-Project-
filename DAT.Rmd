@@ -24,6 +24,9 @@ library(psych); library(GPArotation); library(lavaan)
 ```
 
 ### Data Source
+
+We accessed our data from the United Nations Sustainable Development Goals Indicators Database. 
+
 ## 1) Load Data
 ## 2) Describe source and process used to download data
 

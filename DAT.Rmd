@@ -24,33 +24,30 @@ library(psych); library(GPArotation); library(lavaan)
 ```
 
 
-### Data Source
-We accessed our data from the United Nations Sustainable Development Goals Indicators Database. https://unstats.un.org/sdgs/dataportal
+## Data Source
+We accessed our data from the [World Bank World Development Indicators](https://databank.worldbank.org/)
 
-## 1. Load Data
+### 1. Load Data
 ```{r}
-# code
+read.csv("https://raw.githubusercontent.com/kurt8267/DASC360-Group-E-Project-/refs/heads/main/35943a83-804a-4f98-9389-0cdbecb276de_Data.csv")
 ```
 
-## 2. Describe source and process used to download data
-answer
+## Describe source and process used to download data
+There is a graphical user interface where countries, variables, and years of collection can be selected. Data can be exported as an Excel file or CSV.
 
 
-### Data Dimensions
-Introductory sentence...
+## Data Dimensions
+We downloaded any dimensions that seemed promising so we could narrow them down to the best and most complete.
 ```{r}
-Head()
+head()
 ```
 
-## Predictor Dimensions
+### Predictor Dimensions
 Descriptions of each dimension
 
-## Response Dimensions
+### Response Dimensions
 Descriptions of each dimension
 
 
 ### Data Adjustments
-Need to remove any dims/vars? Create dummy vars?
-
-## Describe what needs to be done
-Answer
+We need to transform the data from long to wide, and remove most dimensions.

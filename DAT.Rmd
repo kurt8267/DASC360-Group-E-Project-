@@ -23,59 +23,34 @@ library(scatterplot3d); library(corrplot); library(pso)
 library(psych); library(GPArotation); library(lavaan)
 ```
 
+
 ### Data Source
+We accessed our data from the United Nations Sustainable Development Goals Indicators Database. https://unstats.un.org/sdgs/dataportal
 
-We accessed our data from the United Nations Sustainable Development Goals Indicators Database. 
+## 1. Load Data
+```{r}
+# code
+```
 
-## 1) Load Data
-## 2) Describe source and process used to download data
+## 2. Describe source and process used to download data
+answer
+
 
 ### Data Dimensions
 Introductory sentence...
+```{r}
 Head()
-Dimension: description
+```
+
+## Predictor Dimensions
+Descriptions of each dimension
+
+## Response Dimensions
+Descriptions of each dimension
+
 
 ### Data Adjustments
+Need to remove any dims/vars? Create dummy vars?
+
 ## Describe what needs to be done
-
-
-### Choose One Issue or Question
-Identifying regions at risk for climate related public health crises.
-
-
-### Global or Local outside US
-Global
-
-
-### Use Strategies for Finding Data
-
-## 1) Assess your data needs
-# Topic: For IVs, temperature change, precipitation change, increase in extreme weather events, increase in droughts, existing number of rivers, biome type, population density, local food production, local wealth. DVs: changes in all cause mortality, changes in natural disaster damages
-
-# Time Period: Ideally time series.
-
-# Granularity: Summary data is fine
-
-# Geography: Subnational ideal, county level may be best
-
-# Frequency: Yearly is likely fine, but seasonal could allow for seasonal effects
-
-# Method: Any
-
-
-## 2) Ask who cares
-Governments care both about predicting catastrophes within their borders, and looking good or seeking aid.
-
-Many international NGOs are purpose built to track and address these kinds of things.
-
-Researchers may be interested academically, especially climate scientists.
-
-Trade/industry may also track it, especially reinsurance firms (actuaries, cat modeling)
-
-
-## 3) Search through different paths
-
-# 3. Library Guide https://libguides.stthomas.edu/c.php?g=88624&p=572486
-UN Sustainable Development Goal Indicators https://unstats.un.org/sdgs/dataportal - very promising at tracking national preparedness and vulnerability
-
-data.un.org - very sleek interface (LLM?) for fetching official UN data, extremely promising
+Answer

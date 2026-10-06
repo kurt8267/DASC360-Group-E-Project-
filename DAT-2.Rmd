@@ -1,0 +1,65 @@
+---
+title: "DAT Project Group E"
+subtitle: "DASC 360: Multivariate Data Analysis"
+author: "Bryce Pacourek, Tyler Johnson, Reilly Kurth, Munir Abdikadir"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: flatly
+    toc: true
+    number_sections: false
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+mainfont: TimesNewRoman
+sansfont: TimesNewRoman
+monofont: TimesNewRoman
+---
+
+#### Load Relevant R Libraries
+```{r warning=FALSE, message=FALSE}
+library(rmarkdown); library(knitr); library(moments); 
+library(scatterplot3d); library(corrplot); library(pso)
+library(psych); library(GPArotation); library(lavaan)
+```
+
+
+## Data Source
+We accessed our data from the [World Bank World Development Indicators](https://databank.worldbank.org/)
+
+### 1. Load Data
+```{r}
+read.csv("https://raw.githubusercontent.com/kurt8267/DASC360-Group-E-Project-/refs/heads/main/35943a83-804a-4f98-9389-0cdbecb276de_Data.csv")
+```
+
+## Describe source and process used to download data
+There is a graphical user interface where countries, variables, and years of collection can be selected. Data can be exported as an Excel file or CSV.
+
+
+## Data Dimensions
+We downloaded any dimensions that seemed promising so we could narrow them down to the best and most complete.
+```{r}
+head()
+```
+
+### Predictor Dimensions
+Access to electricity (% of population)
+UHC service coverage index - a single summary measure scored from 0 to 100 that tracks a country's average coverage of essential health services 
+Out-of-pocket expenditure (% of current health expenditure)
+Food production index (2014-2016 = 100)
+Population density (people per sq. km of land area)
+People using at least basic sanitation services (% of population) - 2 missing cases
+Current health expenditure per capita (current US$)
+Domestic general government health expenditure (% of GDP)
+Domestic private health expenditure (% of current health expenditure)
+
+### Response Dimensions
+Mortality rate, under-5 (per 1,000 live births)
+Suicide mortality rate (per 100,000 population)
+Birth rate, crude (per 1,000 people)
+Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)
+Death rate, crude (per 1,000 people)
+
+
+### Data Adjustments
+We need to transform the data from long to wide, and remove most dimensions.

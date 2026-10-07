@@ -34,34 +34,40 @@ data_raw <- read.csv("https://github.com/kurt8267/DASC360-Group-E-Project-/raw/r
 ```
 
 ## Describe source and process used to download data
-There is a graphical user interface where countries, variables, and years of collection can be selected. Data can be exported as an Excel file or CSV.
+There is a graphical user interface where countries, variables, and years of collection can be selected. The data is then loaded into a table in the GUI, which can be exported as an Excel file or CSV.
 
 
 ## Data Dimensions
-We downloaded any dimensions that seemed promising so we could narrow them down to the best and most complete.
+We sorted through the various World Development Indicators and first downloaded any dimensions that seemed promising. From there, we narrowed them down to focus on dimensions that were the most complete and that addressed our question.
 ```{r}
 head(data_raw)
 ```
 
 ### Predictor Dimensions
+
+We chose the following dimensions to be our predictor variables as we felt that they represented socioeconomic, environmental and healthcare characteristics that could help explain differences in population health. Most of these dimensions give us insight into the resources, access to healthcare services and living conditions within these countries. These characteristics can be used to predict differences in various mortaltiy and birth rates. 
+
 - Access to electricity (% of population)
-- UHC service coverage index - a single summary measure scored from 0 to 100 that tracks a country's
-- average coverage of essential health services 
-- Out-of-pocket expenditure (% of current health expenditure)
-- Food production index (2014-2016 = 100)
+- UHC service coverage index - a single summary measure scored from 0 to 100 that tracks a country's average coverage of essential health services 
+- Out-of-pocket expenditure (% of current health expenditure) - the percentage of a country's total healthcare spending that is paid by individuals rather than by government insurance.
+- Food production index (2014-2016 = 100) - the level of food production in a country relative to the average production during 2014-2016
 - Population density (people per sq. km of land area)
-- People using at least basic sanitation services (% of population) - 2 missing cases
-- Current health expenditure per capita (current US$)
-- Domestic general government health expenditure (% of GDP)
-- Domestic private health expenditure (% of current health expenditure)
+- People using at least basic sanitation services (% of population)(2 missing cases)
+- Current health expenditure per capita (current US$) - the amount of money spent on healthcare per person
+- Domestic general government health expenditure (% of GDP) - government spending on healthcare as a percentage of the country's gross domestic product
+- Domestic private health expenditure (% of current health expenditure) - the percentage of total healthcare expenditure that comes from private sources.
 
 ### Response Dimensions
-- Mortality rate, under-5 (per 1,000 live births)
+
+We chose the following dimensions as our response dimensions, as we think that differences in socioeconomic conditions and healthcare access between countries could help explain differences in these rates. 
+
+- Mortality rate, under-5 (per 1,000 live births) 
 - Suicide mortality rate (per 100,000 population)
 - Birth rate, crude (per 1,000 people)
 - Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)
 - Death rate, crude (per 1,000 people)
 
+*Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete. 
 
 ### Data Adjustments
-We need to transform the data from long to wide, and remove most extraneous dimensions.
+Our data is currently in long form, so we need to transform it to wide form so that our dimensions are represented as individual columns. We also have a few extra predictor and response dimensions, so we need to remove some of the extraneous dimensions.

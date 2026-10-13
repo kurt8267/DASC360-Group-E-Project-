@@ -20,24 +20,48 @@ monofont: TimesNewRoman
 ```{r warning=FALSE, message=FALSE}
 library(rmarkdown); library(knitr); library(moments); 
 library(scatterplot3d); library(corrplot); library(pso)
-library(psych); library(GPArotation); library(lavaan)
+library(psych); library(GPArotation); library(lavaan); library(tidyverse)
 ```
 
 
-## Data Source
+## DAT
 We accessed our data from the [World Bank World Development Indicators](https://databank.worldbank.org/)
 
 ### 1. Load Data
 ```{r}
-data_raw <- read.csv("https://github.com/kurt8267/DASC360-Group-E-Project-/raw/refs/heads/dat-2026-10-06/dat-data-trimmed-long.csv",
-                     quote = "")
+df <- read.csv("https://raw.githubusercontent.com/kurt8267/DASC360-Group-E-Project-/refs/heads/main/35943a83-804a-4f98-9389-0cdbecb276de_Data.csv",
+                     row.names = NULL)
+df <- df[1:2544,c(1,3,7)]
+df <-
+  df %>%
+  pivot_wider(
+    id_cols = "Country.Name",
+    names_from = "Series.Name",
+    values_from = "Value"
+  )
+data_mat <- matrix(
+  data = t(df),
+  byrow = TRUE,
+  nrow = 48,
+  dimnames = list(
+    df$Country.Name,
+    names(df)
+  )
+)
+data_mat <- data_mat[,-1]
+data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
+colSums(is.na(data_mat))
 ```
 
-## Describe source and process used to download data
+### Describe source and process used to download data
 There is a graphical user interface where countries, variables, and years of collection can be selected. The data is then loaded into a table in the GUI, which can be exported as an Excel file or CSV.
 
+### Long to Wide
+```{r}
 
-## Data Dimensions
+```
+
+### Data Dimensions
 We sorted through the various World Development Indicators and first downloaded any dimensions that seemed promising. From there, we narrowed them down to focus on dimensions that were the most complete and that addressed our question.
 ```{r}
 head(data_raw)
@@ -71,3 +95,6 @@ We chose the following dimensions as our response dimensions, as we think that d
 
 ### Data Adjustments
 Our data is currently in long form, so we need to transform it to wide form so that our dimensions are represented as individual columns. We also have a few extra predictor and response dimensions, so we need to remove some of the extraneous dimensions.
+
+
+## EDA

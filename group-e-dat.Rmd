@@ -40,7 +40,7 @@ df <-
     values_from = "Value"
   )
 data_mat <- matrix(
-  data = t(df),
+  data = as.double(t(df)),
   byrow = TRUE,
   nrow = 48,
   dimnames = list(
@@ -50,16 +50,11 @@ data_mat <- matrix(
 )
 data_mat <- data_mat[,-1]
 data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
-colSums(is.na(data_mat))
+#colSums(is.na(data_mat))
 ```
 
 ### Describe source and process used to download data
 There is a graphical user interface where countries, variables, and years of collection can be selected. The data is then loaded into a table in the GUI, which can be exported as an Excel file or CSV.
-
-### Long to Wide
-```{r}
-
-```
 
 ### Data Dimensions
 We sorted through the various World Development Indicators and first downloaded any dimensions that seemed promising. From there, we narrowed them down to focus on dimensions that were the most complete and that addressed our question.

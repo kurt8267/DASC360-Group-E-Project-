@@ -98,3 +98,19 @@ Our data is currently in long form, so we need to transform it to wide form so t
 
 
 ## EDA
+
+### Visualize and use describe() to present descriptive statistics for each dimension
+```{r}
+# code
+```
+
+### Visualize and summarize the covariability between each pair of dimensions
+```{r}
+# code
+```
+
+### Identify potential two-dimensional outliers and investigate their influence
+
+```{r}
+# code
+```

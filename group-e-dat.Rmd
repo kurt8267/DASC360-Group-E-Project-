@@ -20,7 +20,7 @@ monofont: TimesNewRoman
 ```{r warning=FALSE, message=FALSE}
 library(rmarkdown); library(knitr); library(moments); 
 library(scatterplot3d); library(corrplot); library(pso)
-library(psych); library(GPArotation); library(lavaan); library(tidyverse)
+library(psych); library(GPArotation); library(lavaan); library(tidyverse); library(GGally)
 ```
 
 
@@ -29,15 +29,14 @@ We accessed our data from the [World Bank World Development Indicators](https://
 
 ### 1. Load Data
 ```{r}
-df <- read.csv("https://raw.githubusercontent.com/kurt8267/DASC360-Group-E-Project-/refs/heads/main/35943a83-804a-4f98-9389-0cdbecb276de_Data.csv",
-                     row.names = NULL)
-df <- df[1:2544,c(1,3,7)]
+df <- read.csv("https://github.com/kurt8267/DASC360-Group-E-Project-/raw/refs/heads/main/final-vars-long.csv")
+df <- df[1:480, c(1, 3, 5)]
 df <-
   df %>%
   pivot_wider(
     id_cols = "Country.Name",
     names_from = "Series.Name",
-    values_from = "Value"
+    values_from = "X2019..YR2019."
   )
 data_mat <- matrix(
   data = as.double(t(df)),
@@ -50,7 +49,6 @@ data_mat <- matrix(
 )
 data_mat <- data_mat[,-1]
 data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
-#colSums(is.na(data_mat))
 ```
 
 ### Describe source and process used to download data
@@ -128,20 +126,28 @@ When we downloaded our data from World Bank, it was in long form. We transformed
 
 ### Visualize and use describe() to present descriptive statistics for each dimension
 ```{r}
-library(psych)
-describe(data_mat)
+#library(psych)
+for (i in 1:9) {
+  hist(data_mat[,i], main = colnames(data_mat)[i])
+}
+for (i in 1:9) {
+  boxplot(data_mat[,i], main = colnames(data_mat)[i])
+}
+des <- describe(data_mat)
+des
 #glimpse(data_mat) 
 #summary(data_mat)
-
 ```
 
 ### Visualize and summarize the covariability between each pair of dimensions
 ```{r}
-#pairs(data_mat, pch = 16)
+ggpairs(data_mat, pch = 16)
+cor_mat <- cor(x = data_mat,
+               use = "pairwise.complete.obs")
 ```
 
 ### Identify potential two-dimensional outliers and investigate their influence
 
 ```{r}
-# code
+mahalanobis(data_mat, center = mean(data_mat), cov = cov(data_mat))
 ```

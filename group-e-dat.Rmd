@@ -59,12 +59,45 @@ There is a graphical user interface where countries, variables, and years of col
 ### Data Dimensions
 We sorted through the various World Development Indicators and first downloaded any dimensions that seemed promising. From there, we narrowed them down to focus on dimensions that were the most complete and that addressed our question.
 ```{r}
-head(data_raw)
+#head(data_raw)
+head(data_mat)
 ```
 
-### Predictor Dimensions
+### Choosing Variables
 
 We chose the following dimensions to be our predictor variables as we felt that they represented socioeconomic, environmental and healthcare characteristics that could help explain differences in population health. Most of these dimensions give us insight into the resources, access to healthcare services and living conditions within these countries. These characteristics can be used to predict differences in various mortaltiy and birth rates. 
+
+Current List of Variables with 45 or more cases:
+- Food production index (2014-2016 = 100)
+- Population density (people per sq. km of land area)
+- (46) People using at least basic sanitation services (% of population)
+- (46) People practicing open defecation (% of population)
+- Suicide mortality rate (per 100,000 population)
+- (47) Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)
+- Birth rate, crude (per 1,000 people)
+- Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)
+- Cause of death, by non-communicable diseases (% of total)
+- Current health expenditure per capita (current US$)
+- Death rate, crude (per 1,000 people)
+- Domestic general government health expenditure (% of GDP)
+- Domestic general government health expenditure per capita (current US$) 
+- Domestic private health expenditure (% of current health expenditure)
+- Domestic private health expenditure per capita, PPP (current international $)
+- External health expenditure (% of current health expenditure)
+- Incidence of tuberculosis (per 100,000 people)
+- Mortality rate attributed to household and ambient air pollution, age-standardized, female (per 100,000 female population)
+- Mortality rate attributed to unintentional poisoning (per 100,000 population)
+- Mortality rate, infant (per 1,000 live births) 
+- Mortality rate, under-5 (per 1,000 live births)
+- Out-of-pocket expenditure (% of current health expenditure)
+- (46) People using at least basic drinking water services (% of population)
+- Population growth (annual %)
+- UHC service coverage index
+- Access to electricity (% of population)
+- (45) Adjusted savings: particulate emission damage (% of GNI) 
+- (46) Adjusted savings: carbon dioxide damage (% of GNI)
+
+### Predictor Dimensions
 
 - Access to electricity (% of population)
 - UHC service coverage index - a single summary measure scored from 0 to 100 that tracks a country's average coverage of essential health services 
@@ -89,19 +122,22 @@ We chose the following dimensions as our response dimensions, as we think that d
 *Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete. 
 
 ### Data Adjustments
-Our data is currently in long form, so we need to transform it to wide form so that our dimensions are represented as individual columns. We also have a few extra predictor and response dimensions, so we need to remove some of the extraneous dimensions.
-
+When we downloaded our data from World Bank, it was in long form. We transformed it using pivot_wider with each country having its own row and each predictor and response variable in its own column. From there, we converted it to a matrix and only kept dimensions that were missing less than 4 values.
 
 ## EDA
 
 ### Visualize and use describe() to present descriptive statistics for each dimension
 ```{r}
-# code
+library(psych)
+describe(data_mat)
+#glimpse(data_mat) 
+#summary(data_mat)
+
 ```
 
 ### Visualize and summarize the covariability between each pair of dimensions
 ```{r}
-# code
+#pairs(data_mat, pch = 16)
 ```
 
 ### Identify potential two-dimensional outliers and investigate their influence

@@ -1,0 +1,486 @@
+Country Name,Country Code,Series Name,Series Code,2019 [YR2019]
+Angola,AGO,GDP per capita (current US$),NY.GDP.PCAP.CD,2507.86807213642
+Angola,AGO,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,142.8
+Angola,AGO,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,49.5470237290202
+Angola,AGO,Access to electricity (% of population),EG.ELC.ACCS.ZS,45.6
+Angola,AGO,Population growth (annual %),SP.POP.GROW,3.38788422184303
+Angola,AGO,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-4.35122089958229
+Angola,AGO,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,4.69334990706621
+Angola,AGO,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,55.3
+Angola,AGO,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,57.1772720297183
+Angola,AGO,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.701
+Benin,BEN,GDP per capita (current US$),NY.GDP.PCAP.CD,1130.82135339795
+Benin,BEN,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,201.8
+Benin,BEN,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,18.8420840944928
+Benin,BEN,Access to electricity (% of population),EG.ELC.ACCS.ZS,40
+Benin,BEN,Population growth (annual %),SP.POP.GROW,2.73538842831436
+Benin,BEN,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.98211326561793
+Benin,BEN,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,10.0234868627555
+Benin,BEN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,87
+Benin,BEN,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,54.7126301158935
+Benin,BEN,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.335
+Botswana,BWA,GDP per capita (current US$),NY.GDP.PCAP.CD,7172.08956480028
+Botswana,BWA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,140.7
+Botswana,BWA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,69.8150599678289
+Botswana,BWA,Access to electricity (% of population),EG.ELC.ACCS.ZS,70.1
+Botswana,BWA,Population growth (annual %),SP.POP.GROW,1.42262847077389
+Botswana,BWA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.57639094067899
+Botswana,BWA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,12.1761128353156
+Botswana,BWA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,40
+Botswana,BWA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,52.1364281845063
+Botswana,BWA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.408
+Burkina Faso,BFA,GDP per capita (current US$),NY.GDP.PCAP.CD,764.853077774946
+Burkina Faso,BFA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,201.3
+Burkina Faso,BFA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,26.7185691114763
+Burkina Faso,BFA,Access to electricity (% of population),EG.ELC.ACCS.ZS,17.6
+Burkina Faso,BFA,Population growth (annual %),SP.POP.GROW,2.52989803984158
+Burkina Faso,BFA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.24391866186016
+Burkina Faso,BFA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,7.61499229626679
+Burkina Faso,BFA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,88.1
+Burkina Faso,BFA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,52.3338381998252
+Burkina Faso,BFA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.564
+Burundi,BDI,GDP per capita (current US$),NY.GDP.PCAP.CD,234.31061590725
+Burundi,BDI,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,205.9
+Burundi,BDI,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,44.3577388229315
+Burundi,BDI,Access to electricity (% of population),EG.ELC.ACCS.ZS,9.8
+Burundi,BDI,Population growth (annual %),SP.POP.GROW,3.28367531420808
+Burundi,BDI,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.08494176938687
+Burundi,BDI,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Burundi,BDI,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,56.2
+Burundi,BDI,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,52.0689189061514
+Burundi,BDI,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.394
+Cabo Verde,CPV,GDP per capita (current US$),NY.GDP.PCAP.CD,4380.78117331128
+Cabo Verde,CPV,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,91.2
+Cabo Verde,CPV,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,78.8249549430518
+Cabo Verde,CPV,Access to electricity (% of population),EG.ELC.ACCS.ZS,91.4
+Cabo Verde,CPV,Population growth (annual %),SP.POP.GROW,0.134109462358547
+Cabo Verde,CPV,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,6.80449531732363
+Cabo Verde,CPV,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,27.8579899530761
+Cabo Verde,CPV,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,14.1
+Cabo Verde,CPV,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,16.7793753242354
+Cabo Verde,CPV,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,5.004
+Cameroon,CMR,GDP per capita (current US$),NY.GDP.PCAP.CD,1555.22660476477
+Cameroon,CMR,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,206.7
+Cameroon,CMR,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,44.8498829146317
+Cameroon,CMR,Access to electricity (% of population),EG.ELC.ACCS.ZS,63.2
+Cameroon,CMR,Population growth (annual %),SP.POP.GROW,2.78164441246944
+Cameroon,CMR,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,0.636415290549962
+Cameroon,CMR,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-1.67534318797489
+Cameroon,CMR,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,76.6
+Cameroon,CMR,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,54.1350394491912
+Cameroon,CMR,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.163
+Central African Republic,CAF,GDP per capita (current US$),NY.GDP.PCAP.CD,449.228467602439
+Central African Republic,CAF,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,305.1
+Central African Republic,CAF,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,14.481982156805
+Central African Republic,CAF,Access to electricity (% of population),EG.ELC.ACCS.ZS,14.3
+Central African Republic,CAF,Population growth (annual %),SP.POP.GROW,1.34469255324203
+Central African Republic,CAF,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.72290159793216
+Central African Republic,CAF,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Central African Republic,CAF,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,254.7
+Central African Republic,CAF,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,65.8893116932645
+Central African Republic,CAF,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,30.25
+Chad,TCD,GDP per capita (current US$),NY.GDP.PCAP.CD,893.336441643325
+Chad,TCD,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,227.4
+Chad,TCD,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,12.2940184363217
+Chad,TCD,Access to electricity (% of population),EG.ELC.ACCS.ZS,8.4
+Chad,TCD,Population growth (annual %),SP.POP.GROW,3.21991132048391
+Chad,TCD,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.04363651447466
+Chad,TCD,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Chad,TCD,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,114
+Chad,TCD,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,67.8818028393383
+Chad,TCD,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,12.519
+Comoros,COM,GDP per capita (current US$),NY.GDP.PCAP.CD,1519.26386436068
+Comoros,COM,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,164.6
+Comoros,COM,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,51.3942491790653
+Comoros,COM,Access to electricity (% of population),EG.ELC.ACCS.ZS,83.3
+Comoros,COM,Population growth (annual %),SP.POP.GROW,1.92385702700328
+Comoros,COM,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-0.178239892265168
+Comoros,COM,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,2.5427001558711
+Comoros,COM,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,44.8
+Comoros,COM,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,35.2152596512165
+Comoros,COM,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.644
+"Congo, Dem. Rep.",COD,GDP per capita (current US$),NY.GDP.PCAP.CD,504.00419142286
+"Congo, Dem. Rep.",COD,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,209.8
+"Congo, Dem. Rep.",COD,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,16.416662028181
+"Congo, Dem. Rep.",COD,Access to electricity (% of population),EG.ELC.ACCS.ZS,19.1
+"Congo, Dem. Rep.",COD,Population growth (annual %),SP.POP.GROW,3.1695285579572
+"Congo, Dem. Rep.",COD,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-2.58176822938702
+"Congo, Dem. Rep.",COD,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,0.520569388013303
+"Congo, Dem. Rep.",COD,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,92.2
+"Congo, Dem. Rep.",COD,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,57.5103028676614
+"Congo, Dem. Rep.",COD,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.46
+"Congo, Rep.",COG,GDP per capita (current US$),NY.GDP.PCAP.CD,2488.42466724916
+"Congo, Rep.",COG,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,170.4
+"Congo, Rep.",COG,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,20.3642632516174
+"Congo, Rep.",COG,Access to electricity (% of population),EG.ELC.ACCS.ZS,47.7
+"Congo, Rep.",COG,Population growth (annual %),SP.POP.GROW,2.40634419722279
+"Congo, Rep.",COG,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-1.27988440285151
+"Congo, Rep.",COG,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-19.1120451195332
+"Congo, Rep.",COG,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,52.2
+"Congo, Rep.",COG,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,55.6854592350319
+"Congo, Rep.",COG,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.344
+Cote d'Ivoire,CIV,GDP per capita (current US$),NY.GDP.PCAP.CD,2141.76836170115
+Cote d'Ivoire,CIV,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,186.5
+Cote d'Ivoire,CIV,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,35.8059580233634
+Cote d'Ivoire,CIV,Access to electricity (% of population),EG.ELC.ACCS.ZS,68.6
+Cote d'Ivoire,CIV,Population growth (annual %),SP.POP.GROW,2.61916841176218
+Cote d'Ivoire,CIV,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.96244737490909
+Cote d'Ivoire,CIV,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,14.8203988308974
+Cote d'Ivoire,CIV,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,75.3
+Cote d'Ivoire,CIV,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,53.9401959393894
+Cote d'Ivoire,CIV,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.492
+Equatorial Guinea,GNQ,GDP per capita (current US$),NY.GDP.PCAP.CD,6804.14923073888
+Equatorial Guinea,GNQ,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,165.7
+Equatorial Guinea,GNQ,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,..
+Equatorial Guinea,GNQ,Access to electricity (% of population),EG.ELC.ACCS.ZS,66.6
+Equatorial Guinea,GNQ,Population growth (annual %),SP.POP.GROW,3.271454421427
+Equatorial Guinea,GNQ,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-8.52391282041842
+Equatorial Guinea,GNQ,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Equatorial Guinea,GNQ,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,80.7
+Equatorial Guinea,GNQ,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,61.7878538546425
+Equatorial Guinea,GNQ,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.496
+Eritrea,ERI,GDP per capita (current US$),NY.GDP.PCAP.CD,..
+Eritrea,ERI,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,237.4
+Eritrea,ERI,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,..
+Eritrea,ERI,Access to electricity (% of population),EG.ELC.ACCS.ZS,50.3
+Eritrea,ERI,Population growth (annual %),SP.POP.GROW,1.47474580694345
+Eritrea,ERI,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,..
+Eritrea,ERI,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Eritrea,ERI,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,40.5
+Eritrea,ERI,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,36.9849370654438
+Eritrea,ERI,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.413
+Eswatini,SWZ,GDP per capita (current US$),NY.GDP.PCAP.CD,3913.14577547336
+Eswatini,SWZ,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,173.7
+Eswatini,SWZ,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,61.4575194811054
+Eswatini,SWZ,Access to electricity (% of population),EG.ELC.ACCS.ZS,77
+Eswatini,SWZ,Population growth (annual %),SP.POP.GROW,0.931970814127083
+Eswatini,SWZ,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,5.4445627805287
+Eswatini,SWZ,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-0.0476722125687599
+Eswatini,SWZ,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,51.5
+Eswatini,SWZ,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,47.8824034780573
+Eswatini,SWZ,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.372
+Ethiopia,ETH,GDP per capita (current US$),NY.GDP.PCAP.CD,793.473247218996
+Ethiopia,ETH,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,142.5
+Ethiopia,ETH,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,8.68474048756754
+Ethiopia,ETH,Access to electricity (% of population),EG.ELC.ACCS.ZS,48
+Ethiopia,ETH,Population growth (annual %),SP.POP.GROW,2.69123978261516
+Ethiopia,ETH,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,5.48664147824387
+Ethiopia,ETH,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,16.7012177955312
+Ethiopia,ETH,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,53.6
+Ethiopia,ETH,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,49.2411163721754
+Ethiopia,ETH,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.481
+Gabon,GAB,GDP per capita (current US$),NY.GDP.PCAP.CD,7441.1786472281
+Gabon,GAB,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,78.3
+Gabon,GAB,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,51.4223011158649
+Gabon,GAB,Access to electricity (% of population),EG.ELC.ACCS.ZS,90.3
+Gabon,GAB,Population growth (annual %),SP.POP.GROW,2.47279132038176
+Gabon,GAB,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.38257599119697
+Gabon,GAB,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Gabon,GAB,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,38.5
+Gabon,GAB,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,47.786337705363
+Gabon,GAB,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.693
+"Gambia, The",GMB,GDP per capita (current US$),NY.GDP.PCAP.CD,738.186751987483
+"Gambia, The",GMB,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,220.5
+"Gambia, The",GMB,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,47.2014093425827
+"Gambia, The",GMB,Access to electricity (% of population),EG.ELC.ACCS.ZS,62.1
+"Gambia, The",GMB,Population growth (annual %),SP.POP.GROW,2.35622071960344
+"Gambia, The",GMB,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.74848295956672
+"Gambia, The",GMB,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-1.4531254031081
+"Gambia, The",GMB,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,50.4
+"Gambia, The",GMB,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,49.0332361637192
+"Gambia, The",GMB,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.807
+Ghana,GHA,GDP per capita (current US$),NY.GDP.PCAP.CD,2186.65822682613
+Ghana,GHA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,193.6
+Ghana,GHA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,25.327363008811
+Ghana,GHA,Access to electricity (% of population),EG.ELC.ACCS.ZS,83.5
+Ghana,GHA,Population growth (annual %),SP.POP.GROW,2.00780519953703
+Ghana,GHA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,4.39063133478864
+Ghana,GHA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,4.80188375574988
+Ghana,GHA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,44.1
+Ghana,GHA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,45.0562793406133
+Ghana,GHA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.34
+Guinea,GIN,GDP per capita (current US$),NY.GDP.PCAP.CD,1031.34146480732
+Guinea,GIN,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,238
+Guinea,GIN,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,27.6063983510435
+Guinea,GIN,Access to electricity (% of population),EG.ELC.ACCS.ZS,42.2
+Guinea,GIN,Population growth (annual %),SP.POP.GROW,2.56100451729991
+Guinea,GIN,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.9464024435663
+Guinea,GIN,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-8.63484292859741
+Guinea,GIN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,105.4
+Guinea,GIN,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,58.5333995131645
+Guinea,GIN,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.945
+Guinea-Bissau,GNB,GDP per capita (current US$),NY.GDP.PCAP.CD,811.210004050041
+Guinea-Bissau,GNB,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,228.8
+Guinea-Bissau,GNB,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,25.9048078160921
+Guinea-Bissau,GNB,Access to electricity (% of population),EG.ELC.ACCS.ZS,30.9
+Guinea-Bissau,GNB,Population growth (annual %),SP.POP.GROW,2.34095994762157
+Guinea-Bissau,GNB,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.89045755858285
+Guinea-Bissau,GNB,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-4.47684691769408
+Guinea-Bissau,GNB,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,79.5
+Guinea-Bissau,GNB,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,58.9953932978029
+Guinea-Bissau,GNB,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.863
+Kenya,KEN,GDP per capita (current US$),NY.GDP.PCAP.CD,1960.40808854893
+Kenya,KEN,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,131.9
+Kenya,KEN,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,37.298797647533
+Kenya,KEN,Access to electricity (% of population),EG.ELC.ACCS.ZS,69.7
+Kenya,KEN,Population growth (annual %),SP.POP.GROW,1.96381549826771
+Kenya,KEN,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.07004769448449
+Kenya,KEN,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,4.12106914992989
+Kenya,KEN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,42.7
+Kenya,KEN,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,47.7235952905794
+Kenya,KEN,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.294
+Lesotho,LSO,GDP per capita (current US$),NY.GDP.PCAP.CD,1082.05706777516
+Lesotho,LSO,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,288.3
+Lesotho,LSO,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,41.4091356196007
+Lesotho,LSO,Access to electricity (% of population),EG.ELC.ACCS.ZS,44.6
+Lesotho,LSO,Population growth (annual %),SP.POP.GROW,1.17469837087993
+Lesotho,LSO,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-2.56925986092637
+Lesotho,LSO,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,3.352526818175
+Lesotho,LSO,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,68.1
+Lesotho,LSO,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,52.1246834059576
+Lesotho,LSO,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,11.83
+Liberia,LBR,GDP per capita (current US$),NY.GDP.PCAP.CD,658.164180770507
+Liberia,LBR,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,152.7
+Liberia,LBR,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,20.5305258325317
+Liberia,LBR,Access to electricity (% of population),EG.ELC.ACCS.ZS,23.1
+Liberia,LBR,Population growth (annual %),SP.POP.GROW,1.98225492944197
+Liberia,LBR,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-4.38160849244818
+Liberia,LBR,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Liberia,LBR,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,88.7
+Liberia,LBR,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,55.8149744959511
+Liberia,LBR,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.513
+Madagascar,MDG,GDP per capita (current US$),NY.GDP.PCAP.CD,499.818837622534
+Madagascar,MDG,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,208
+Madagascar,MDG,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,13.1693375483997
+Madagascar,MDG,Access to electricity (% of population),EG.ELC.ACCS.ZS,31
+Madagascar,MDG,Population growth (annual %),SP.POP.GROW,2.60136633480103
+Madagascar,MDG,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.73013722889858
+Madagascar,MDG,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,4.74517486881593
+Madagascar,MDG,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,65
+Madagascar,MDG,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,47.798500985169
+Madagascar,MDG,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.518
+Malawi,MWI,GDP per capita (current US$),NY.GDP.PCAP.CD,580.889139762475
+Malawi,MWI,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,148.5
+Malawi,MWI,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,42.8038384563156
+Malawi,MWI,Access to electricity (% of population),EG.ELC.ACCS.ZS,11.2
+Malawi,MWI,Population growth (annual %),SP.POP.GROW,2.65059567621331
+Malawi,MWI,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.9515101541935
+Malawi,MWI,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Malawi,MWI,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,51.3
+Malawi,MWI,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,49.012711304658
+Malawi,MWI,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.301
+Mali,MLI,GDP per capita (current US$),NY.GDP.PCAP.CD,971.949318638092
+Mali,MLI,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,167.1
+Mali,MLI,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,41.2415636688459
+Mali,MLI,Access to electricity (% of population),EG.ELC.ACCS.ZS,47.9
+Mali,MLI,Population growth (annual %),SP.POP.GROW,3.01814494306617
+Mali,MLI,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.8782927302578
+Mali,MLI,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,4.31678074193741
+Mali,MLI,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,91.9
+Mali,MLI,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,60.7864669409744
+Mali,MLI,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.475
+Mauritania,MRT,GDP per capita (current US$),NY.GDP.PCAP.CD,1767.072710621
+Mauritania,MRT,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,128.4
+Mauritania,MRT,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,49.7339098436372
+Mauritania,MRT,Access to electricity (% of population),EG.ELC.ACCS.ZS,44.9
+Mauritania,MRT,Population growth (annual %),SP.POP.GROW,2.95347297852629
+Mauritania,MRT,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,0.13930852413786
+Mauritania,MRT,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,28.6187088516257
+Mauritania,MRT,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,43.4
+Mauritania,MRT,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,44.2199742587814
+Mauritania,MRT,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.115
+Mauritius,MUS,GDP per capita (current US$),NY.GDP.PCAP.CD,11568.2533399824
+Mauritius,MUS,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,34.7
+Mauritius,MUS,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,95.9523952887646
+Mauritius,MUS,Access to electricity (% of population),EG.ELC.ACCS.ZS,100
+Mauritius,MUS,Population growth (annual %),SP.POP.GROW,0.0322330642925213
+Mauritius,MUS,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.83079852696363
+Mauritius,MUS,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,2.54495409112765
+Mauritius,MUS,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,15.7
+Mauritius,MUS,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,10.449010837504
+Mauritius,MUS,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.9
+Mozambique,MOZ,GDP per capita (current US$),NY.GDP.PCAP.CD,519.09255091362
+Mozambique,MOZ,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,228.4
+Mozambique,MOZ,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,32.0616645064997
+Mozambique,MOZ,Access to electricity (% of population),EG.ELC.ACCS.ZS,29.7
+Mozambique,MOZ,Population growth (annual %),SP.POP.GROW,2.9397415898529
+Mozambique,MOZ,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-0.646283515954551
+Mozambique,MOZ,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-0.389348731344427
+Mozambique,MOZ,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,68.6
+Mozambique,MOZ,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,56.4869035775823
+Mozambique,MOZ,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.078
+Namibia,NAM,GDP per capita (current US$),NY.GDP.PCAP.CD,4731.9210318831
+Namibia,NAM,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,142.5
+Namibia,NAM,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,36.9123066913261
+Namibia,NAM,Access to electricity (% of population),EG.ELC.ACCS.ZS,53.3
+Namibia,NAM,Population growth (annual %),SP.POP.GROW,2.79932223646079
+Namibia,NAM,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-3.57649160039189
+Namibia,NAM,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,7.57291033089667
+Namibia,NAM,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,46.6
+Namibia,NAM,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,51.1413543006384
+Namibia,NAM,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,7.722
+Niger,NER,GDP per capita (current US$),NY.GDP.PCAP.CD,541.265819870273
+Niger,NER,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,213.3
+Niger,NER,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,14.10969749241
+Niger,NER,Access to electricity (% of population),EG.ELC.ACCS.ZS,18.5
+Niger,NER,Population growth (annual %),SP.POP.GROW,3.36654855482346
+Niger,NER,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.56706453200282
+Niger,NER,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,20.441151739205
+Niger,NER,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,120.8
+Niger,NER,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,66.596046818909
+Niger,NER,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.573
+Nigeria,NGA,GDP per capita (current US$),NY.GDP.PCAP.CD,3189.81286496183
+Nigeria,NGA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,165.2
+Nigeria,NGA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,43.2767522763627
+Nigeria,NGA,Access to electricity (% of population),EG.ELC.ACCS.ZS,55.4
+Nigeria,NGA,Population growth (annual %),SP.POP.GROW,2.1944019229433
+Nigeria,NGA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-0.0100047582209584
+Nigeria,NGA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,7.19891436832295
+Nigeria,NGA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,117.4
+Nigeria,NGA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,67.7129748896548
+Nigeria,NGA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,12.679
+Rwanda,RWA,GDP per capita (current US$),NY.GDP.PCAP.CD,823.355304065304
+Rwanda,RWA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,165.8
+Rwanda,RWA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,74.3150494792337
+Rwanda,RWA,Access to electricity (% of population),EG.ELC.ACCS.ZS,46.6
+Rwanda,RWA,Population growth (annual %),SP.POP.GROW,2.28086099658628
+Rwanda,RWA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,6.82168128112207
+Rwanda,RWA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-4.35734451023858
+Rwanda,RWA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,42.7
+Rwanda,RWA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,38.9549322520303
+Rwanda,RWA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.132
+Sao Tome and Principe,STP,GDP per capita (current US$),NY.GDP.PCAP.CD,1935.2931816596
+Sao Tome and Principe,STP,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,225.4
+Sao Tome and Principe,STP,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,45.7575570286583
+Sao Tome and Principe,STP,Access to electricity (% of population),EG.ELC.ACCS.ZS,75.1
+Sao Tome and Principe,STP,Population growth (annual %),SP.POP.GROW,1.51332392108067
+Sao Tome and Principe,STP,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,0.482132360625684
+Sao Tome and Principe,STP,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Sao Tome and Principe,STP,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,17.1
+Sao Tome and Principe,STP,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,26.9996631109613
+Sao Tome and Principe,STP,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.117
+Senegal,SEN,GDP per capita (current US$),NY.GDP.PCAP.CD,1431.18128932159
+Senegal,SEN,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,146.4
+Senegal,SEN,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,57.204943845452
+Senegal,SEN,Access to electricity (% of population),EG.ELC.ACCS.ZS,70.4
+Senegal,SEN,Population growth (annual %),SP.POP.GROW,2.71760793051867
+Senegal,SEN,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,1.80892290272958
+Senegal,SEN,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Senegal,SEN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,46.2
+Senegal,SEN,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,36.2314508424599
+Senegal,SEN,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,5.979
+Seychelles,SYC,GDP per capita (current US$),NY.GDP.PCAP.CD,19141.5118743615
+Seychelles,SYC,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,43.1
+Seychelles,SYC,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,98.885830584073
+Seychelles,SYC,Access to electricity (% of population),EG.ELC.ACCS.ZS,100
+Seychelles,SYC,Population growth (annual %),SP.POP.GROW,0.887925293341637
+Seychelles,SYC,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,4.58155113586345
+Seychelles,SYC,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+Seychelles,SYC,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,14.8
+Seychelles,SYC,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,12.4694057977103
+Seychelles,SYC,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.1
+Sierra Leone,SLE,GDP per capita (current US$),NY.GDP.PCAP.CD,843.71251730417
+Sierra Leone,SLE,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,239
+Sierra Leone,SLE,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,20.0997388519849
+Sierra Leone,SLE,Access to electricity (% of population),EG.ELC.ACCS.ZS,22.7
+Sierra Leone,SLE,Population growth (annual %),SP.POP.GROW,2.32146457882717
+Sierra Leone,SLE,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,3.08171137743476
+Sierra Leone,SLE,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-11.7801131485764
+Sierra Leone,SLE,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,108.3
+Sierra Leone,SLE,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,57.7420714444157
+Sierra Leone,SLE,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.39
+"Somalia, Fed. Rep.",SOM,GDP per capita (current US$),NY.GDP.PCAP.CD,539.954816211694
+"Somalia, Fed. Rep.",SOM,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,237.9
+"Somalia, Fed. Rep.",SOM,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,39.2334053088705
+"Somalia, Fed. Rep.",SOM,Access to electricity (% of population),EG.ELC.ACCS.ZS,49.2
+"Somalia, Fed. Rep.",SOM,Population growth (annual %),SP.POP.GROW,3.67525774477084
+"Somalia, Fed. Rep.",SOM,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-0.909258009902032
+"Somalia, Fed. Rep.",SOM,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+"Somalia, Fed. Rep.",SOM,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,118.4
+"Somalia, Fed. Rep.",SOM,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,62.1743193957673
+"Somalia, Fed. Rep.",SOM,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,10.908
+South Africa,ZAF,GDP per capita (current US$),NY.GDP.PCAP.CD,6533.71121032856
+South Africa,ZAF,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,74.9
+South Africa,ZAF,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,74.2781920666219
+South Africa,ZAF,Access to electricity (% of population),EG.ELC.ACCS.ZS,85
+South Africa,ZAF,Population growth (annual %),SP.POP.GROW,1.64957495527878
+South Africa,ZAF,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-1.3803610544763
+South Africa,ZAF,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,-2.13329026073249
+South Africa,ZAF,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,34.3
+South Africa,ZAF,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,36.0055219269501
+South Africa,ZAF,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.75
+South Sudan,SSD,GDP per capita (current US$),NY.GDP.PCAP.CD,..
+South Sudan,SSD,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,134.5
+South Sudan,SSD,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,12.5375975656084
+South Sudan,SSD,Access to electricity (% of population),EG.ELC.ACCS.ZS,6.8
+South Sudan,SSD,Population growth (annual %),SP.POP.GROW,2.92439531185626
+South Sudan,SSD,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,..
+South Sudan,SSD,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,..
+South Sudan,SSD,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,96.7
+South Sudan,SSD,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,61.5097144022279
+South Sudan,SSD,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.302
+Sudan,SDN,GDP per capita (current US$),NY.GDP.PCAP.CD,709.975280761719
+Sudan,SDN,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,145.3
+Sudan,SDN,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,51.3601722607621
+Sudan,SDN,Access to electricity (% of population),EG.ELC.ACCS.ZS,57.6
+Sudan,SDN,Population growth (annual %),SP.POP.GROW,2.93537902352139
+Sudan,SDN,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-5.00795943799888
+Sudan,SDN,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,23.7018237741586
+Sudan,SDN,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,56.1
+Sudan,SDN,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,38.9254568748127
+Sudan,SDN,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.549
+Tanzania,TZA,GDP per capita (current US$),NY.GDP.PCAP.CD,1063.32250976563
+Tanzania,TZA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,128.3
+Tanzania,TZA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,29.6802357492442
+Tanzania,TZA,Access to electricity (% of population),EG.ELC.ACCS.ZS,37.7
+Tanzania,TZA,Population growth (annual %),SP.POP.GROW,2.98060939385811
+Tanzania,TZA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.71005881950599
+Tanzania,TZA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,25.1959006577815
+Tanzania,TZA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,45.6
+Tanzania,TZA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,54.0155450648365
+Tanzania,TZA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.183
+Togo,TGO,GDP per capita (current US$),NY.GDP.PCAP.CD,917.718016777619
+Togo,TGO,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,223.1
+Togo,TGO,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,21.6400439153227
+Togo,TGO,Access to electricity (% of population),EG.ELC.ACCS.ZS,52.5
+Togo,TGO,Population growth (annual %),SP.POP.GROW,2.14516244090598
+Togo,TGO,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.69276787668153
+Togo,TGO,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,9.78984826016905
+Togo,TGO,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,66
+Togo,TGO,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,46.116486630999
+Togo,TGO,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,9.58
+Uganda,UGA,GDP per capita (current US$),NY.GDP.PCAP.CD,822.171150036357
+Uganda,UGA,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,163
+Uganda,UGA,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,22.0428914452572
+Uganda,UGA,Access to electricity (% of population),EG.ELC.ACCS.ZS,41.3
+Uganda,UGA,Population growth (annual %),SP.POP.GROW,3.39132142318772
+Uganda,UGA,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,2.88958690241905
+Uganda,UGA,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,1.22417220650065
+Uganda,UGA,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,51.6
+Uganda,UGA,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,52.7766118022037
+Uganda,UGA,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,5.42
+Zambia,ZMB,GDP per capita (current US$),NY.GDP.PCAP.CD,1258.98619844462
+Zambia,ZMB,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,174
+Zambia,ZMB,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,33.8947045843208
+Zambia,ZMB,Access to electricity (% of population),EG.ELC.ACCS.ZS,43
+Zambia,ZMB,Population growth (annual %),SP.POP.GROW,2.96162166175699
+Zambia,ZMB,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-1.51894951073589
+Zambia,ZMB,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,22.8310678289682
+Zambia,ZMB,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,53.5
+Zambia,ZMB,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,63.55778473389
+Zambia,ZMB,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,6.482
+Zimbabwe,ZWE,GDP per capita (current US$),NY.GDP.PCAP.CD,2184.52155388801
+Zimbabwe,ZWE,"Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)",SH.STA.AIRP.P5,189.6
+Zimbabwe,ZWE,People using at least basic sanitation services (% of population),SH.STA.BASS.ZS,35.7743353702206
+Zimbabwe,ZWE,Access to electricity (% of population),EG.ELC.ACCS.ZS,46.7
+Zimbabwe,ZWE,Population growth (annual %),SP.POP.GROW,1.56353351552455
+Zimbabwe,ZWE,GDP per capita growth (annual %),NY.GDP.PCAP.KD.ZG,-7.78558358121073
+Zimbabwe,ZWE,"Adjusted net savings, including particulate emission damage (% of GNI)",NY.ADJ.SVNG.GN.ZS,5.66445548248983
+Zimbabwe,ZWE,"Mortality rate, under-5 (per 1,000 live births)",SH.DYN.MORT,58.6
+Zimbabwe,ZWE,"Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)",SH.DTH.COMM.ZS,47.4693438360145
+Zimbabwe,ZWE,"Death rate, crude (per 1,000 people)",SP.DYN.CDRT.IN,8.281
+,,,,
+,,,,
+,,,,
+Data from database: World Development Indicators,,,,
+Last Updated: 10/08/2026,,,,

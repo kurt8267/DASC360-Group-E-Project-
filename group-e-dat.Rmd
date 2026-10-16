@@ -20,7 +20,8 @@ monofont: TimesNewRoman
 ```{r warning=FALSE, message=FALSE}
 library(rmarkdown); library(knitr); library(moments); 
 library(scatterplot3d); library(corrplot); library(pso)
-library(psych); library(GPArotation); library(lavaan); library(tidyverse); library(GGally)
+library(psych); library(GPArotation); library(lavaan); 
+library(tidyverse); library(GGally); library(dplyr); 
 ```
 
 
@@ -49,6 +50,7 @@ data_mat <- matrix(
 )
 data_mat <- data_mat[,-1]
 data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
+colnames(data_mat) <- c("gdp_c", "dth_p", "san", "ela", "pop_g", "gdp_g","dth_k", "dth_d", "dth_c")
 ```
 
 ### Describe source and process used to download data
@@ -61,61 +63,21 @@ We sorted through the various World Development Indicators and first downloaded 
 head(data_mat)
 ```
 
-### Choosing Variables
-
-We chose the following dimensions to be our predictor variables as we felt that they represented socioeconomic, environmental and healthcare characteristics that could help explain differences in population health. Most of these dimensions give us insight into the resources, access to healthcare services and living conditions within these countries. These characteristics can be used to predict differences in various mortaltiy and birth rates. 
-
-Current List of Variables with 45 or more cases:
-- Food production index (2014-2016 = 100)
-- Population density (people per sq. km of land area)
-- (46) People using at least basic sanitation services (% of population)
-- (46) People practicing open defecation (% of population)
-- Suicide mortality rate (per 100,000 population)
-- (47) Total alcohol consumption per capita (liters of pure alcohol, projected estimates, 15+ years of age)
-- Birth rate, crude (per 1,000 people)
-- Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)
-- Cause of death, by non-communicable diseases (% of total)
-- Current health expenditure per capita (current US$)
-- Death rate, crude (per 1,000 people)
-- Domestic general government health expenditure (% of GDP)
-- Domestic general government health expenditure per capita (current US$) 
-- Domestic private health expenditure (% of current health expenditure)
-- Domestic private health expenditure per capita, PPP (current international $)
-- External health expenditure (% of current health expenditure)
-- Incidence of tuberculosis (per 100,000 people)
-- Mortality rate attributed to household and ambient air pollution, age-standardized, female (per 100,000 female population)
-- Mortality rate attributed to unintentional poisoning (per 100,000 population)
-- Mortality rate, infant (per 1,000 live births) 
-- Mortality rate, under-5 (per 1,000 live births)
-- Out-of-pocket expenditure (% of current health expenditure)
-- (46) People using at least basic drinking water services (% of population)
-- Population growth (annual %)
-- UHC service coverage index
-- Access to electricity (% of population)
-- (45) Adjusted savings: particulate emission damage (% of GNI) 
-- (46) Adjusted savings: carbon dioxide damage (% of GNI)
-
 ### Predictor Dimensions
-
-- Access to electricity (% of population)
-- UHC service coverage index - a single summary measure scored from 0 to 100 that tracks a country's average coverage of essential health services 
-- Out-of-pocket expenditure (% of current health expenditure) - the percentage of a country's total healthcare spending that is paid by individuals rather than by government insurance.
-- Food production index (2014-2016 = 100) - the level of food production in a country relative to the average production during 2014-2016
-- Population density (people per sq. km of land area)
-- People using at least basic sanitation services (% of population)(2 missing cases)
-- Current health expenditure per capita (current US$) - the amount of money spent on healthcare per person
-- Domestic general government health expenditure (% of GDP) - government spending on healthcare as a percentage of the country's gross domestic product
-- Domestic private health expenditure (% of current health expenditure) - the percentage of total healthcare expenditure that comes from private sources.
+- gdp_c: "GDP per capita (current US$)"                                                                               
+- san: "People using at least basic sanitation services (% of population)"                                          
+- ela: "Access to electricity (% of population)"                                                                    
+- pop_g: "Population growth (annual %)"                                                                               
+- gdp_g: "GDP per capita growth (annual %)"                                                    
 
 ### Response Dimensions
 
 We chose the following dimensions as our response dimensions, as we think that differences in socioeconomic conditions and healthcare access between countries could help explain differences in these rates. 
 
-- Mortality rate, under-5 (per 1,000 live births) 
-- Suicide mortality rate (per 100,000 population)
-- Birth rate, crude (per 1,000 people)
-- Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)
-- Death rate, crude (per 1,000 people)
+- dth_c: "Death rate, crude (per 1,000 people)"
+- dth_d: "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)"      
+- dth_k: "Mortality rate, under-5 (per 1,000 live births)"             
+- dth_p: "Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)"
 
 *Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete. 
 
@@ -139,13 +101,21 @@ des
 #summary(data_mat)
 ```
 
+The des file shows the number of data points, mean, standard deviatation, minimum value, maximum value, range, skew, kurtosis and more for each of the dimensions. Based on the information, we had a few important things we noticed. 
+
+- GDP per capita ($US) and death rate, crude (per 1,000 people) both have a very large skew and high kurtosis. As a result, it is possible that both dimensions will have to undergo some form of transformation. For GDP, the right skew appears to be caused by a few countries with a significantly higher GDP than the rest, which seem to be outliers.
+- Mortality rate under 5 also appears to have a very high kurtosis and some possible outliers that contribute to the right skew of the data.
+- Based on the boxplot, it appears that most dimensions have a few 1D outliers, specifically in GDP per capita, people using at least basic sanitation services, cause of death, by communicable diseases... , and population growth.
+
 ### Visualize and summarize the covariability between each pair of dimensions
 ```{r}
 ggpairs(data_mat, pch = 16)
-cor_mat <- cor(x = data_mat,
-               use = "pairwise.complete.obs")
+cor_mat <- cor(x = data_mat, use = "pairwise.complete.obs")
+cov_mat <- cov(x = data_mat, use = "pairwise.complete.obs")
+cov_mat
 ```
 
+ggpairs shows the scatterplots for each pair of dimensions, as well as the correlation coefficient for each pair. Looking at the scatterplots, we can see that there 
 ### Identify potential two-dimensional outliers and investigate their influence
 
 ```{r}
@@ -160,4 +130,11 @@ mahalanobisPairs <- function(datamat) {
   }
   
 }
+# Bryce
+#data_center <- apply(data_mat, MARGIN = 2, FUN = mean, na.rm = TRUE)
+#data_cov <- cov(data_mat, use = "pairwise.complete.obs")
+#
+#
+#MD_matrix <- mahalanobis(data_mat, center = data_center, cov = data_cov, na.rm = #TRUE)
+#MD_matrix
 ```

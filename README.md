@@ -1,1 +1,0 @@
-This is the branch for the [DAT assignment](https://stthomas.instructure.com/courses/88483/assignments/1356630).

@@ -20,7 +20,8 @@ monofont: TimesNewRoman
 ```{r warning=FALSE, message=FALSE}
 library(rmarkdown); library(knitr); library(moments); 
 library(scatterplot3d); library(corrplot); library(pso)
-library(psych); library(GPArotation); library(lavaan); library(tidyverse); library(GGally)
+library(psych); library(GPArotation); library(lavaan); 
+library(tidyverse); library(GGally); library(dplyr); 
 ```
 
 
@@ -49,6 +50,7 @@ data_mat <- matrix(
 )
 data_mat <- data_mat[,-1]
 data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
+colnames(data_mat) <- c("gdp_per_capita", "air_pollution_mortality_rate", "sanitation_access", "electricity_access", "population_growth", "gdp_per_capita_growth","under_5_mortality_rate", "death_communicable_disease", "crude_death_rate")
 ```
 
 ### Describe source and process used to download data
@@ -62,20 +64,20 @@ head(data_mat)
 ```
 
 ### Predictor Dimensions
-- "GDP per capita (current US$)"                                                                               
-- "People using at least basic sanitation services (% of population)"                                          
-- "Access to electricity (% of population)"                                                                    
-- "Population growth (annual %)"                                                                               
-- "GDP per capita growth (annual %)"                                                    
+- gdp_per_capita: "GDP per capita (current US$)"                                                                               
+- sanitation_access: "People using at least basic sanitation services (% of population)"                                          
+- electricity_access: "Access to electricity (% of population)"                                                                    
+- population_growth: "Population growth (annual %)"                                                                               
+- gdp_per_capita_growth: "GDP per capita growth (annual %)"                                                    
 
 ### Response Dimensions
 
 We chose the following dimensions as our response dimensions, as we think that differences in socioeconomic conditions and healthcare access between countries could help explain differences in these rates. 
 
-- "Death rate, crude (per 1,000 people)"
-- "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)"      
-- "Mortality rate, under-5 (per 1,000 live births)"                                   
-- "Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)"
+- crude_death_rate: "Death rate, crude (per 1,000 people)"
+- death_communicable_disease: "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)"      
+- under_5_mortality_rate: "Mortality rate, under-5 (per 1,000 live births)"             
+- air_pollution_mortality_rate: "Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)"
 
 *Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete. 
 
@@ -113,6 +115,7 @@ cov_mat <- cov(x = data_mat, use = "pairwise.complete.obs")
 cov_mat
 ```
 
+ggpairs shows the scatterplots for each pair of dimensions, as well as the correlation coefficient for each pair. Looking at the scatterplots, we can see that there 
 ### Identify potential two-dimensional outliers and investigate their influence
 
 ```{r}

@@ -149,5 +149,15 @@ cor_mat <- cor(x = data_mat,
 ### Identify potential two-dimensional outliers and investigate their influence
 
 ```{r}
-mahalanobis(data_mat, center = mean(data_mat), cov = cov(data_mat))
+mahalanobisPairs <- function(datamat) {
+  # Returns pairwise Mahalanobis distances for a numeric data matrix.
+  # I apologize for the nasty nested loop
+  cormat <- cor(datamat)
+  for(i in len(datamat) - 1) {
+    for(j in len(datamat) - 1) {
+      
+    }
+  }
+  
+}
 ```

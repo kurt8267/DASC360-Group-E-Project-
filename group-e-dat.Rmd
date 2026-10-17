@@ -21,7 +21,7 @@ monofont: TimesNewRoman
 library(rmarkdown); library(knitr); library(moments); 
 library(scatterplot3d); library(corrplot); library(pso)
 library(psych); library(GPArotation); library(lavaan); 
-library(tidyverse); library(GGally); library(dplyr); 
+library(tidyverse); library(GGally); library(dplyr);
 ```
 
 
@@ -50,7 +50,24 @@ data_mat <- matrix(
 )
 data_mat <- data_mat[,-1]
 data_mat <- data_mat[,which(4 > colSums(is.na(data_mat)))]
-colnames(data_mat) <- c("gdp_c", "dth_p", "san", "ela", "pop_g", "gdp_g","dth_k", "dth_d", "dth_c")
+colnames(data_mat) <- c("gdp_c",
+                        "dth_p",
+                        "san",
+                        "ela",
+                        "pop_g",
+                        "gdp_g",
+                        "dth_k",
+                        "dth_d",
+                        "dth_c")
+data_mat <- data_mat[, c("san",
+                         "ela",
+                         "gdp_c",
+                         "gdp_g",
+                         "pop_g",
+                         "dth_c",
+                         "dth_d",
+                         "dth_k",
+                         "dth_p")]
 ```
 
 ### Describe source and process used to download data
@@ -64,25 +81,25 @@ head(data_mat)
 ```
 
 ### Predictor Dimensions
-- gdp_c: "GDP per capita (current US$)"                                                                               
-- san: "People using at least basic sanitation services (% of population)"                                          
-- ela: "Access to electricity (% of population)"                                                                    
-- pop_g: "Population growth (annual %)"                                                                               
-- gdp_g: "GDP per capita growth (annual %)"                                                    
+1. **san:** "People using at least basic sanitation services (% of population)"
+2. **ela:** "Access to electricity (% of population)"
+3. **gdp_c:** "GDP per capita (current US$)"
+4. **gdp_g:** "GDP per capita growth (annual %)"
+5. **pop_g:** "Population growth (annual %)"
 
 ### Response Dimensions
+We chose the following dimensions as our response dimensions, as we think that differences in socioeconomic conditions and healthcare access between countries could help explain differences in these rates.
 
-We chose the following dimensions as our response dimensions, as we think that differences in socioeconomic conditions and healthcare access between countries could help explain differences in these rates. 
+6. **dth_c:** "Death rate, crude (per 1,000 people)"
+7. **dth_d:** "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)"
+8. **dth_k:** "Mortality rate, under-5 (per 1,000 live births)"
+9. **dth_p:** "Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)"
 
-- dth_c: "Death rate, crude (per 1,000 people)"
-- dth_d: "Cause of death, by communicable diseases and maternal, prenatal and nutrition conditions (% of total)"      
-- dth_k: "Mortality rate, under-5 (per 1,000 live births)"             
-- dth_p: "Mortality rate attributed to household and ambient air pollution, age-standardized (per 100,000 population)"
-
-*Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete. 
+*Note: Our dataset focuses on countries in Sub-Saharan Africa, as that is how the dataset grouped the countries. Furthermore, all our data comes from 2019, as data during and after the pandemic was significantly less complete.
 
 ### Data Adjustments
 When we downloaded our data from World Bank, it was in long form. We transformed it using pivot_wider with each country having its own row and each predictor and response variable in its own column. From there, we converted it to a matrix and only kept dimensions that were missing less than 4 values.
+
 
 ## EDA
 
@@ -108,33 +125,110 @@ The des file shows the number of data points, mean, standard deviatation, minimu
 - Based on the boxplot, it appears that most dimensions have a few 1D outliers, specifically in GDP per capita, people using at least basic sanitation services, cause of death, by communicable diseases... , and population growth.
 
 ### Visualize and summarize the covariability between each pair of dimensions
+The correlation plot shows two strong clusters of variables; Sanitation, elecritifaction, and GDP per capita form one, likely linked with wealth, and the death dimensions form another. GDP growth does not appear to have strong covariance with any other dimensions.
+
 ```{r}
-ggpairs(data_mat, pch = 16)
 cor_mat <- cor(x = data_mat, use = "pairwise.complete.obs")
 cov_mat <- cov(x = data_mat, use = "pairwise.complete.obs")
 cov_mat
+corrplot(cor_mat,
+         mar = c(0, 0, 2, 0),
+         method = "square",
+         title = "Correlation Plot")
 ```
 
-ggpairs shows the scatterplots for each pair of dimensions, as well as the correlation coefficient for each pair. Looking at the scatterplots, we can see that there 
+The pairs.panels() function shows scatterplots and correlation coefficients for each pair of dimensions. Looking at the scatterplots, we can see that there is a strong linear relationship between sanitation and electricity. The extreme skewness of GDP per capita and crude death rate are also visible.
+
+```{r fig.height = 50, fig.width = 50}
+pairs.panels(data_mat,
+             oma = c(0, 0, 20, 0),
+             main = "Scatterplot Matrix",
+             gap = 0,
+             smooth = FALSE,
+             density = FALSE,
+             ellipses = FALSE,
+             yaxt = "n",
+             xaxt = "n",
+             cex.cor = 1,
+             cex.main = 15,
+             cex.labels = 15,
+             cex = 10,
+             pch = 1)
+```
+
+
 ### Identify potential two-dimensional outliers and investigate their influence
+Visually, there is a very high outlier in every pair with a death dimension, and two outliers in every pair with GDP per capita. We coded a custom function to calculate the Mahalanobis distance of every column pair per row. 34 pairs have Mahalanobis distances significant at alpha = 0.01.
+
+- **The Central African Republic** (CAR) has the most outliers at 16, all linked to their extraordinarily high death rates. This is likely due to the CAR's ongoing civil war and resulting humanitarian crisis, according to [Columbia University](https://www.publichealth.columbia.edu/news/extreme-mortality-rate-found-central-african-republic). These potential outliers are those visually identified above.
+- **Seychelles and Maritius** also have a large number of outliers related to their extremely high electrification, sanitation, and GDPs, visually identified above. This is likely due to their status as small island nations, making them quite different from the rest of Africa.
+- **Zimbabwe** has a single outlier in GDP growth X population growth as they have moderate population growth but severely declining GDP, which is not visually apparent. This is likely due to an economic crisis resulting from extreme public dept, [according to the IMF](https://www.imf.org/-/media/files/publications/cr/2019/1zweea2019003.pdf).
 
 ```{r}
-mahalanobisPairs <- function(datamat) {
+mahalanobisPairs <- function(dm) {
   # Returns pairwise Mahalanobis distances for a numeric data matrix.
-  # I apologize for the nasty nested loop
-  cormat <- cor(datamat)
-  for(i in len(datamat) - 1) {
-    for(j in len(datamat) - 1) {
-      
+  # I apologize for the nasty triple-nested loop
+  cn <- ncol(dm)
+  rn <- nrow(dm)
+  l <- 0
+  means <- colMeans(dm, na.rm = TRUE)
+  cvm <- cov(dm, use = "pairwise.complete.obs")
+  trv <- (((cn - 1) ^ 2 + (cn - 1)) / 2)
+  md <- data.frame(matrix(ncol = 4, nrow = trv * rn))
+  colnames(md) <- c("row", "c1", "c2", "md")
+  for(i in 1:rn) { # loops through rows
+    for(j in 1:(cn - 1)) { # loops through columns except last
+      for(k in (j + 1):cn) { # loops every other column
+        l = l + 1
+        dvn <- matrix(
+          data = dm[i, c(j, k)] - c(means[j], means[k]),
+          ncol = 2
+        )
+        sgm <- cvm[c(j, k), c(j, k)]
+        md$row[l] <- rownames(dm)[i]
+        md$c1[l] <- colnames(dm)[j]
+        md$c2[l] <- colnames(dm)[k]
+        md$md[l] <- dvn %*% solve(sgm) %*% t(dvn)
+      }
     }
   }
-  
+  return(md)
 }
-# Bryce
-#data_center <- apply(data_mat, MARGIN = 2, FUN = mean, na.rm = TRUE)
-#data_cov <- cov(data_mat, use = "pairwise.complete.obs")
-#
-#
-#MD_matrix <- mahalanobis(data_mat, center = data_center, cov = data_cov, na.rm = #TRUE)
-#MD_matrix
+md_df <- mahalanobisPairs(data_mat)
+sig_df <- md_df[which(md_df$md > 9.21034),]
+```
+
+Removing the CAR, Seychelles, and Mauritius results in more condensed scatterplots, which are much easier to read. The high skewness in GDP per capita is still present but less pronounced.
+
+```{r fig.height = 50, fig.width = 50}
+data_mat[-c(8, 30, 38), ] %>%
+  pairs.panels(
+             oma = c(0, 0, 20, 0),
+             main = "Scatterplot Matrix Without Outliers",
+             gap = 0,
+             smooth = FALSE,
+             density = FALSE,
+             ellipses = FALSE,
+             yaxt = "n",
+             xaxt = "n",
+             cex.main = 15,
+             cex.cor = 1,
+             cex.labels = 15,
+             cex = 10,
+             pch = 1)
+```
+
+Comparing the correlogram with the CAR, Seychelles, and Mauritius vs. without, it appears that the removal weakens the negative correlations between the death cluster and san/ela/gdp_c cluster. The positive correlations in the san/ela/gdp_c cluster are also weakened, likely due to Seychelles and Mauritius' outliers in those pairs falling in the top right corner of their scatterplots, strengthening the correlations. Every correlation of deaths due to air pollution were also lowered.
+
+Overall it may be appropriate to exclude the CAR from analysis as its unusual outliers are due to a unique (and hopefully temporary) civil war humanitarian crisis unrelated to environmental issues. Mauritius and the Seychelles are also highly distinct from the rest of Subsaharan Africa as they are small island nations not physically connected to the rest of the continent.
+
+```{r}
+corrplot(cor_mat,
+         mar = c(0, 0, 2, 0),
+         method = "square",
+         title = "Correlation Plot")
+cor(data_mat[-c(8, 30, 38), ], use = "pairwise.complete.obs") %>%
+  corrplot(method = "square",
+           mar = c(0, 0, 2, 0),
+           title = "Correlation Plot Without Outliers")
 ```

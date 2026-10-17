@@ -112,6 +112,9 @@ for (i in 1:9) {
 for (i in 1:9) {
   boxplot(data_mat[,i], main = colnames(data_mat)[i])
 }
+for (i in 1:9) {
+  stripchart(data_mat[, i], method = "stack", main = colnames(data_mat)[i])
+}
 des <- describe(data_mat)
 des
 #glimpse(data_mat) 
@@ -131,6 +134,7 @@ The correlation plot shows two strong clusters of variables; Sanitation, elecrit
 cor_mat <- cor(x = data_mat, use = "pairwise.complete.obs")
 cov_mat <- cov(x = data_mat, use = "pairwise.complete.obs")
 cov_mat
+round(cor_mat, 2)
 corrplot(cor_mat,
          mar = c(0, 0, 2, 0),
          method = "square",

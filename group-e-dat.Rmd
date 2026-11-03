@@ -231,8 +231,62 @@ corrplot(cor_mat,
          mar = c(0, 0, 2, 0),
          method = "square",
          title = "Correlation Plot")
-cor(data_mat[-c(8, 30, 38), ], use = "pairwise.complete.obs") %>%
-  corrplot(method = "square",
-           mar = c(0, 0, 2, 0),
-           title = "Correlation Plot Without Outliers")
+cor_mat_outliers_rm <- cor(data_mat[-c(8, 30, 38), ], use = "pairwise.complete.obs")
+corrplot(corr = cor_mat_outliers_rm,
+         method = "square",
+         mar = c(0, 0, 2, 0),
+         title = "Correlation Plot Without Outliers")
+residual_cors <- cor_mat - cor_mat_outliers_rm
+residual_cors
+corrplot(corr = residual_cors,
+         method = "square",
+         mar = c(0, 0, 2, 0),
+         title = "Residual Correlation Plot")
+```
+
+
+### Identifying Intrinsic Dimensionality
+
+* Kaiser's Criterion: 3
+* Jolliffe's Criterion: 4
+* Skree Plot: 4
+```{r}
+eigen_values <- eigen(cor_mat_outliers_rm)$values
+sum(eigen_values > 1.0)
+sum(eigen_values > 0.7)
+plot(main = "Scree Plot",
+     ylab = "Eigenvalues",
+     x = eigen_values,
+     type = "b")
+corrplot(cor_mat_outliers_rm,
+         method = "square",
+         order = "hclust")
+```
+
+### Optimally Rotated Loading Matrices
+
+```{r}
+# Orthogonal varimax rotation
+a_rot_varimax <- pca(
+  r = cor_mat_outliers_rm,
+  nfactors = 4,
+  rotate = "varimax"
+)$loadings
+a_rot_varimax <- matrix(a_rot_varimax,
+                        ncol = 4,
+                        dimnames = dimnames(a_rot_varimax))
+round(a_rot_varimax, digits = 3)
+# Oblique oblimin rotation
+a_rot_oblimin <- pca(
+  r = cor_mat_outliers_rm,
+  nfactors = 4,
+  rotate = "oblimin"
+)
+a_rot_oblimin_phi <- a_rot_oblimin$Phi
+a_rot_oblimin <- a_rot_oblimin$loadings
+a_rot_oblimin <- matrix(a_rot_oblimin,
+                        ncol = 4,
+                        dimnames = dimnames(a_rot_oblimin))
+round(a_rot_oblimin, digits = 3)
+round(a_rot_oblimin_phi, digits = 3)
 ```

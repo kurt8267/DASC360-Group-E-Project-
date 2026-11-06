@@ -1,5 +1,5 @@
 ---
-title: "DAT Project Group E"
+title: "EFA Project Group E"
 subtitle: "DASC 360: Multivariate Data Analysis"
 author: "Bryce Pacourek, Tyler Johnson, Reilly Kurth, Munir Abdikadir"
 date: "`r Sys.Date()`"

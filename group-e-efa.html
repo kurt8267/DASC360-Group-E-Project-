@@ -13,7 +13,7 @@
 
 <meta name="date" content="2026-11-06" />
 
-<title>DAT Project Group E</title>
+<title>EFA Project Group E</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -1503,7 +1503,7 @@ font-size: 0.95em;
 
 
 
-<h1 class="title toc-ignore">DAT Project Group E</h1>
+<h1 class="title toc-ignore">EFA Project Group E</h1>
 <h3 class="subtitle">DASC 360: Multivariate Data Analysis</h3>
 <h4 class="author">Bryce Pacourek, Tyler Johnson, Reilly Kurth, Munir
 Abdikadir</h4>
@@ -2071,7 +2071,9 @@ of 0.7. For individual dimensions, dth_c has the highest proportion of
 variance lost, at 0.22, below the guideline of 0.30. For the residual
 correlations matrix, the only original dimension pair with a proportion
 of covariability lost above the +-0.10 guideline is dth_c and dth_d,
-with a residual of -0.139.</p>
+with a residual of -0.139. Complexity is not a significant issue, with a
+mean Hofmann’s Complexity Index of 1.1, and dth_c having the highest
+individual complexity at 1.15.</p>
 <pre class="r"><code>dv_arot_obli</code></pre>
 <pre><code>## Principal Components Analysis
 ## Call: principal(r = r, nfactors = nfactors, residuals = residuals, 
@@ -2120,7 +2122,10 @@ lower, at only 0.76. Additionally, pop_g’s proportion of variance lost
 is above the 30% guideline at 35.5%, and san’s is extremely close at
 29.8% The residual matrix indicated a large amount of covariability
 lost, with 5 pairs above 0.10 (san x gdp_c, san x pop_g, ela x pop_g,
-gdp_g x gdp_c, and gdp_g x pop_g)</p>
+gdp_g x gdp_c, and gdp_g x pop_g). For the independent variables,
+complexity somewhat concerning, with a mean Hofmann’s complexity of 1.2,
+and gdp_c (1.33) and pop_g (1.61) both having complexity above the 1.3
+guideline.</p>
 <pre class="r"><code>iv_arot_obli</code></pre>
 <pre><code>## Principal Components Analysis
 ## Call: principal(r = r, nfactors = nfactors, residuals = residuals, 

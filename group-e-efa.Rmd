@@ -362,3 +362,31 @@ round(iv_arot_obli$residual, digits = 3)
 abs(iv_arot_obli$residual) > 0.1
 corrplot(iv_arot_obli$residual, method = "square")
 ```
+
+### Final Loading Matrices
+
+#### A~pred~
+
+Our final choice for our A~pred~ matrix is the obliquely rotated matrix.
+
+```{r}
+A_pred <- matrix(
+  data = dv_arot_obli$loadings,
+  ncol = 2,
+  dimnames = dimnames(dv_arot_obli$loadings)
+)
+A_pred
+```
+
+#### A~resp~
+
+Our final choice for our A~resp~ matrix is our obliquely rotated matrix.
+
+```{r}
+A_resp <- matrix(
+  data = iv_arot_orth$loadings,
+  ncol = 2,
+  dimnames = dimnames(iv_arot_orth$loadings)
+)
+A_resp
+```

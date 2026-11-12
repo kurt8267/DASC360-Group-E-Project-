@@ -2179,32 +2179,32 @@ guideline.</p>
 </div>
 <div id="final-loading-matrices" class="section level3">
 <h3>Final Loading Matrices</h3>
-<div id="apred" class="section level4">
-<h4>A<sub>pred</sub></h4>
-<p>Our final choice for our A<sub>pred</sub> matrix is the obliquely
+<div id="aresp" class="section level4">
+<h4>A<sub>resp</sub></h4>
+<p>Our final choice for our A<sub>resp</sub> matrix is the obliquely
 rotated matrix.</p>
-<pre class="r"><code>A_pred &lt;- matrix(
+<pre class="r"><code>A_resp &lt;- matrix(
   data = dv_arot_obli$loadings,
   ncol = 2,
   dimnames = dimnames(dv_arot_obli$loadings)
 )
-A_pred</code></pre>
+A_resp</code></pre>
 <pre><code>##              PC1         PC2
 ## dth_c 0.77488522  0.20997222
 ## dth_d 0.97262265 -0.15888865
 ## dth_k 0.91206937  0.09587996
 ## dth_p 0.02155687  0.97835562</code></pre>
 </div>
-<div id="aresp" class="section level4">
-<h4>A<sub>resp</sub></h4>
-<p>Our final choice for our A<sub>resp</sub> matrix is our obliquely
+<div id="apred" class="section level4">
+<h4>A<sub>pred</sub></h4>
+<p>Our final choice for our A<sub>pred</sub> matrix is our obliquely
 rotated matrix.</p>
-<pre class="r"><code>A_resp &lt;- matrix(
+<pre class="r"><code>A_pred &lt;- matrix(
   data = iv_arot_orth$loadings,
   ncol = 2,
   dimnames = dimnames(iv_arot_orth$loadings)
 )
-A_resp</code></pre>
+A_pred</code></pre>
 <pre><code>##               RC1         RC2
 ## san    0.83645673  0.04998470
 ## ela    0.87603941  0.05165147

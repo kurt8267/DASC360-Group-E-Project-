@@ -380,7 +380,7 @@ A_resp
 
 #### A~pred~
 
-Our final choice for our A~pred~ matrix is our obliquely rotated matrix.
+Our final choice for our A~pred~ matrix is our orthogonally rotated matrix.
 
 ```{r}
 A_pred <- matrix(
